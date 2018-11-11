@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+ }
+
+ main {
+  flex: 1 0 auto;
+ }
+
+.mobile-fab-tip {
+	position: fixed;
+	right: 85px;
+	padding:0px 0.5rem;
+	text-align: center;
+	background-color: #616161;
+	border-radius: 2px;
+	color: #FFF;
+  min-width: 22%;
+	width:auto;
+}
+
+.pdl-5{
+  padding-left: 5px;
+}
+.pdr-5{
+  padding-right: 5px;
+}
+
+.pdl-7{
+  padding-left: 7px;
+}
+
+.pdr-7{
+  padding-right: 7px;
+}
+
+
+.icone{
+  max-height: 28px;
+  width: auto;
+}

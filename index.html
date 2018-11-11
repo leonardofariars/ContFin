@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet">
+  <title>Controle Financeiro</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-exetended">
+      <div class="nav-wrapper grey lighten-2">
+        <a href="#!" class="center brand-logo black-text">Controle financeiro</a>
+        <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons black-text pdr-7">dehaze</i></a>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+      <div class="nav-content grey lighten-3 z-depth-2">
+        <div class="row">
+          <div class="col s6 input-field">
+            <select class="select-mes"></select>
+          </div>
+          <div class="col s6 input-field">
+            <select class="select-categoria">
+              <option value="0">Todas</option>
+              <option value="1">Receita</option>
+              <option value="2">Despesa</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th data-field="tipo"><span class="pdl-5">Tipo</span></th>
+          <th data-field="categoria">Categoria</th>
+          <th data-field="data">Data</th>
+          <th data-field="valor"><span class="right pdr-7">Valor</span></th>
+        </tr>
+      </thead>
+
+      <tbody id="despesas">
+        <tr>
+          <td><span class="pdl-5"><i class="material-icons green-text">attach_money</i></span></td>
+          <td><span class="flow-text">Salário</span></td>
+          <td><span class="flow-text">01/11</span></td>
+          <td><span class="flow-text right pdr-7">R$ 1.000,00</span></td>
+        </tr>
+        <tr>
+          <td><span class="pdl-5"><i class="material-icons red-text">attach_money</i></span></td>
+          <td><span class="flow-text">Mercado</span></td>
+          <td><span class="flow-text">01/11</span></td>
+          <td><span class="flow-text right pdr-7">R$ 1.000,00</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="page-footer grey lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s9">
+          <span class="flow-text black-text right">Saldo do mês: R$ 9.999,88</span>
+        </div>
+        <div class="col s3">
+          <div class="fixed-action-btn horizontal click-to-toggle">
+            <a class="btn-floating btn-large waves-effect waves-light  light-blue darken-2">
+              <i class="material-icons">add</i>
+            </a>
+            <ul>
+              <li>
+                <a href = "movimento.html?tipo=despesa"class="btn-floating red" id="newDespesa"><i class="material-icons">add_box</i></a>
+                <a href="#" class="btn-floating mobile-fab-tip">Despesa</a>
+              </li>
+              <li>
+                <a href="movimento.html?tipo=receita" class="btn-floating green" id="newReceita"><i class="material-icons">add_box</i></a>
+                <a href="#" class="btn-floating mobile-fab-tip">Receita</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
